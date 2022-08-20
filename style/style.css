@@ -65,6 +65,7 @@ body {
 .bio {
   color: #fff;
   text-transform: capitalize;
+  font-size: 16px;
 }
 
 .button {
