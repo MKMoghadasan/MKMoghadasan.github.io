@@ -13,7 +13,7 @@ body {
   padding: 3em 0 5em;
   text-align: center;
   background-color: #b2564c;
-  background-image: url('../image/background-home.png');
+  background-image: url('../image/background-home.jpg');
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,7 +65,6 @@ body {
 .bio {
   color: #fff;
   text-transform: capitalize;
-  font-size: 16px;
 }
 
 .button {
@@ -88,15 +87,15 @@ body {
 
 .projects-list {
   padding: 0;
-  margin: 80px auto;
+  margin: 100px auto;
   width: 80%;
-
+  font-size: 40px;
 }
 
 .project {
   display: inline-block;
   width: 21%;
-  margin: 10px 1.8%;
+  margin: 10px 1.7%;
   list-style-type: none;
 }
 
@@ -184,6 +183,7 @@ body {
 
 .good {
   margin: 100px auto 100px;
+  font-size: 40px;
 }
 
 /* form */
