@@ -1,249 +1,95 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+body {
+    margin: 0;
 }
 
-body {
-  margin: 0;
-  font: 100%/1.6 Helvetica ;
+.header-back {
+    background-image: url("https://picsum.photos/id/4/2000/1000");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header {
-  padding: 3em 0 5em;
-  text-align: center;
-  background-color: #b2564c;
-  background-image: url('../image/background-home.jpg');
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    color: rgba(248, 238, 219, 90%);
+    padding: 40px 20px;
+    background-color: rgba(36, 28, 3, 80%);
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
 }
 
-.navigation {
-  margin-bottom: 3em;
+.header img {
+    width: 300px;
+    height: 300px;
+    border: 5px solid rgba(248, 238, 219, 90%);
+    border-radius: 50%;
+    filter: brightness(80%);
 }
 
-/* ul */
-.nav-list {
-  margin: 0;
-  padding: 0;
+.header p {
+    font-family: "Caveat", sans-serif;
 }
 
-/* li */
-.nav-item {
-  display: inline-block;
-  list-style-type: none;
+.header button {
+    margin-top: 15px;
+    background-color: rgba(248, 238, 219, 90%);
+    border: 0;
+    border-radius: 8px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    color: rgba(36, 28, 3, 100%);
+    cursor: pointer;
+    line-height: 24px;
+    padding: 10px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.nav-link {
-  display: block;
-  padding: 1em;
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 0% 0% 3.2% 0%;
 }
 
-.nav-link:hover {
-  color: #b2564c;
+.album img {
+    width: 21%;
+    margin-top: 3.2%;
+    border-radius: 5%;
+    filter: brightness(40%);
+    transition: 200ms;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.avatar {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 3px solid #fff;
+.album img:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.title {
-  display: block;
-  color: #fff;
-  text-transform: capitalize;
-  text-shadow: 1px 1px 0 hsla(0,0%,0%, .5);
+.album img:hover {
+    filter: brightness(80%);
 }
 
-.bio {
-  color: #fff;
-  text-transform: capitalize;
+.social {
+    background: rgb(36, 28, 3);
+    background: linear-gradient(90deg, rgba(36, 28, 3, 0.9) 0%, rgba(117, 88, 9, 0.7) 50%, rgba(36, 28, 3, 0.9) 100%);
+    margin: 0;
+    padding: 2% 0%;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
 }
 
-.button {
-  display: inline-block;
-  padding: 15px 30px;
-  margin-top: 20px;
-  text-decoration: none;
-  border-radius: 3px; 
+.social svg {
+    fill: currentColor;
+    color: rgba(248, 238, 219, 90%);
+    font-size: 10px;
+    filter: brightness(90%);
+    transition: 150ms;
 }
 
-.contact-link {
-  background-color: #fff;
-  color: #b2564c; 
+.social svg:hover {
+    filter: brightness(0%);
 }
-
-/* projects */
-.projects {
-
-}
-
-.projects-list {
-  padding: 0;
-  margin: 100px auto;
-  width: 80%;
-  font-size: 40px;
-}
-
-.project {
-  display: inline-block;
-  width: 21%;
-  margin: 10px 1.7%;
-  list-style-type: none;
-}
-
-.project img {
-  display: block;
-  max-width: 100%;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.project img.active {
-  position: fixed;
-  width: 350px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  transform: scale(2);
-}
-
-.socials {
-  background-color: #39414c;
-  padding: 60px;
-  text-align: center;
-}
-
-.twitter-massage {
-  width: 40%;
-  margin: 1px auto;
-  color: #fff;
-  line-height: 1.7;
-}
-
-.twitter-link {
-  background-color: #03a9f4;
-  color: #fff;
-}
-
-.footer {
-  width: 80%;
-  margin: 0 auto;
-  padding: 30px 0;
-}
-
-.copyright {
-  display: inline-block;
-  text-align: right;
-  width: 49%;
-  color: gray;
-}
-
-.social-list {
-  display: inline-block;
-  width: 49%;
-  margin: 0;
-  padding: 0;
-}
-
-.social-item {
-  display: inline-block;
-  list-style-type: none;
-}
-
-.social-link {
-  color: gray;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.img {
-  width: 20px;
-}
-
-/* about kazem moghadasan */
-.box {
-  max-width: 900px;
-  margin: 20px auto;
-  background: #fff;
-}
-
-.jobs {
-
-}
-
-.good {
-  margin: 100px auto 100px;
-  font-size: 40px;
-}
-
-/* form */
-.form {
-  max-width: 400px;
-  margin: 20px auto;
-}
-
-.form-line{
-
-}
-
-.label {
-  color: #777;
-  text-transform: capitalize;
-}
-
-.input {
-  display: block;
-  width: 100%;
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-}
-
-.text {
-  display: block;
-  width: 100%;
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-}
-
-.form-button {
-  padding: 15px 50px;
-  border: 0;
-  background: #b2564c;
-  color: #fff;
-  border-radius: 3px;
-}
-
-.hours {
-  width: 400px;
-  margin: 100px auto 0;
-  border: 1px solid #ccc;
-  color: #777;
-}
-
-.hours caption {
-  text-align: left;
-  text-transform: capitalize;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.hours td,
-.hours th {
-  border: 1px solid #ccc;
-}
-
-.hours td {
-  text-align: center;
-  padding: 10px 15px;
-}
-
